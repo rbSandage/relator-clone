@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Offers from "./pages/Offers";
 import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import SignUp from "./pages/SignUp";
 
 function App() {
@@ -24,6 +26,20 @@ function App() {
 
 </Routes>
 </BrowserRouter>
+<ToastContainer
+position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
+{/* Same as */}
+<ToastContainer />
     </>
   );
 }
